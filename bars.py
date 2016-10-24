@@ -32,8 +32,6 @@ import math
 def load_data(filepath):
     infile=codecs.open(filepath,'r', 'utf-8-sig').read()
     jsondata = json.loads(infile)
-    jsondata2 = json.load(infile)
-    print (jsondata['bars'][0])
     return jsondata
         
 
